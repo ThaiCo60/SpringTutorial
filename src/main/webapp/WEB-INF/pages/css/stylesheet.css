@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.content {
+	width: 420px;
+	margin:0 auto 0 auto;
+	border: 1px solid blue;
+}
+.line {
+	width: 420px;
+}
+.title {
+	width: 200px;
+	margin-left: 10px;
+}
+.input {
+	width: 200px;
+	margin-left: 10px;
+}

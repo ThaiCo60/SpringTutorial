@@ -7,16 +7,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MainController {
-	
+
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String SayHello(ModelMap model) {
-		model.addAttribute("msg", "Hello World");
-		return "test";
+	public String index(ModelMap model) {
+		return "index";
 	}
 	
-	@RequestMapping(value = "/something", method = RequestMethod.GET)
-	public String SaySomething(ModelMap model) {
-		model.addAttribute("msg", "Hello Spring");
-		return "something";
+	@RequestMapping(value = "/admin", method = RequestMethod.GET)
+	public String admin(ModelMap model) {
+		return "admin";
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String login() {
+        return "login";
+    }
 }
